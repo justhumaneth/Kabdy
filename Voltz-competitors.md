@@ -16,33 +16,39 @@ Voltz is an innovative IRS protocol, their innovation comes in different levels.
 
 *What does it allow?*
 
+The idea is that the protocol will let users either fix their returns or give the opportunity to trade with 10x leverage. Therefore, both risk-averse and true ‘degens’ can trade on the protocol. 
+
 **Tempus**: 
 
 *How it works?*
 
-Tempus is a Fixed income protocol, they follow the idea of splitting tokens. Given that interest bearing tokens garner value through the interest that’s being accrued on the underlying asset as well as that the underlying assets value is also changing. Thus, by splitting them the single asset becomes the Capital and Yield Tokens which can be traded. The tokens then can be traded on Tempus’s AMM.
+Tempus is a Fixed income protocol, they follow the idea of splitting tokens. Given that interest bearing tokens garner value through the interest that’s being accrued on the underlying asset as well as that the underlying assets value is also changing. Thus by splitting them, the single interest asset becomes the Capital and Yield Tokens. The tokens then create a Tempus Pool which is connected to the Tempus AMM. The AMM and Pool allows the trade of both tokens. The AMM is made up of Uniswap (x*y=k), Curves stable swap type AMM and the Balancer v2 Stable Pools. 
 
 *What does it allow?*
+
+All fees from LP are rewarded to the providers. 
+
+The protocol allows for trade of both tokens through the unique Pool and TempusAMM. By using the protocol you can fix your 
 
 **Swivel**:
 
 *How it works?*
 
-In essence, Swivel also splits the tokens into Zero Coupon tokens (zcToken) and nToken. As previously zcTokens represent the underlying and nToken represents the accruing interest. The relation between zcTokens and nTokens is inverse. That is because zcTokens are only redeemable for their value at maturity, meaning they will be traded at a discount before the maturity. On the other side, nTokens depreciating in value, that is because their interest is only accrued until maturity and can be redeemed any time. Thus at maturity there will be no more interest being accrued by the token and if all rewards are redeemed, then nToken has very little to no value.  In order to swap between zcToken and nToken, Swivel have made their own off-chain Orderbook, which is the market maker. 
-
-Personal view, given that Swivel use Orderbooks they need high transaction volumes in order to  reduce spread.
+In essence, Swivel also splits the tokens into Zero Coupon tokens (zcToken) and nToken. As previously zcTokens represent the underlying and nToken represents the accruing interest. The relation between zcTokens and nTokens is inverse. That is because zcTokens are only redeemable for their value at maturity, meaning they will be traded at a discount before the maturity. On the other side, nTokens depreciating in value, that is because their interest is only accrued until maturity and can be redeemed any time. Thus at maturity there will be no more interest being accrued by the token and if all rewards are redeemed, then nToken has very little to no value.  In order to swap between zcToken and nToken, Swivel have made their own off-chain Orderbook, which is the market maker for their tokens. One of the hindrances for Orderbook systems is the need for high transaction volume, to reduce the spread.
 
 *What does it allow?*
 
 Swivel allows the trade of interest bearing tokens through their protocol, which splits the token and allows trade on it through the Orderbook. This means clients can either increase their exposure to variable rates or fix their returns by selling the nTokens in return for zcTokens, which have the underlying assets value at maturity. 
 
+could we frontrun swivel?
+
 **Element Fi**:
 
 *How it works?*
 
-Element also splits their tokens 
+Element also splits their tokens, it also allows boosting through liquidity provision. 
 
-own AMM
+How is their AMM
 
 *What does it allow?*
 
@@ -50,24 +56,22 @@ own AMM
 
 *How it works?*
 
-Unlike other mentioned protocols, Strips operates on an L2 (Arbitrum). Rather than split the yield bearing token, on Strips you choose a long or short position on the interest you are receiving. For example, if you are currently receiving 5%, but speculate that it will go higher, then you would choose long and vice versa. The interesting differentiation would be the introduction of leverage. Strips allow the user to have up to 10x leverage, the position is against the Strips AMM. Thus, the AMM would require the insurance fund, in case if users are winning too much. 
-
-However, an issue is that the fund may run dry in the worst case scenario, leading to failure of the AMM. 
-
-All in all, Strips looks more like an instrument for traders rather than average joe who wants to fix their interest rate. 
+Unlike other mentioned protocols, Strips operates on an L2 (Arbitrum). Rather than split the yield bearing token, on Strips you choose a long or short position on the interest you are receiving. For example, if you are currently receiving 5%, but speculate that it will go higher, then you would choose long and vice versa. The interesting differentiation would be the introduction of leverage. Strips allow the user to have up to 10x leverage, the position is against the Strips AMM. Thus, the AMM would require the insurance fund, in case if users are winning too much. However, an issue is that the fund may run dry in the worst case scenario, leading to failure of the AMM. 
 
 *What does it allow?*
 
-The protocol lets traders use leverage in their speculation against the interest bearing token, therefore have access to significantly more rewards (and losses). 
+The protocol lets traders use leverage in their speculation against the interest bearing token, therefore have access to significantly more rewards (and losses). All in all, Strips looks more like an instrument for traders rather than average joe who wants to fix their interest rate. 
 
 **Pendle**: 
 
 *How it works?*
 
-also own AMM (simply a function of [ x*y = x^ * y^ ]
+Pendle is similar to other protocols we mentioned in splitting the interest token into, Ownership and Yield Tokens. The protocol creates a new pool for each different underlying token and maturity date. 
+
+also own AMM (simply a function of [ x*y = x^dp * y^p ]
 
 *What does it allow?*
 
 Conclusion
 
-Overall, the DeFi space is expanding and as we introduce more of TradFi instruments in an efficient manner, the more of TradFi can we eat up or synchronise with. The interdependent nature of DeFi means introduction of IRS protocols will give more use cases to many other protocols. As of now there is no established way to do the swaps, there is also lack of choice on which interest assets can be used in the mentioned protocols.
+Overall, the DeFi space is expanding and as we introduce more of TradFi instruments in an efficient manner, the more of TradFi can we eat up or synchronise with. The interdependent nature of DeFi means introduction of IRS protocols will give more use cases to many other protocols. As of now there is no established way to do interest swaps, there is also lack of choice on which interest assets can be used in the mentioned protocols. However, the above mentioned protocols are all tackling the matter in their own way, especially Voltz, which means we can expect some interesting growth in the entire space.
