@@ -26,9 +26,7 @@ Tempus is a Fixed income protocol, they follow the idea of splitting tokens. Giv
 
 *What does it allow?*
 
-All fees from LP are rewarded to the providers. 
-
-The protocol allows for trade of both tokens through the unique Pool and TempusAMM. By using the protocol you can fix your 
+By trading your tokens through the TempusAMM you can either fix your returns by acquiring Capital tokens with your Yield tokens. The AMM has a flat fee, therefore all LPs will be able to boost their rewards through fees. One of the useful things I found on Tempus was that I can deposit the underlying token (of the interest bearing protocol) to gain the Fixed or Variable APR. For example, rather than providing sETH from Lido, I can directly provide ETH to Tempus and it gives me the same fixed APR.
 
 **Swivel**:
 
@@ -39,8 +37,6 @@ In essence, Swivel also splits the tokens into Zero Coupon tokens (zcToken) and 
 *What does it allow?*
 
 Swivel allows the trade of interest bearing tokens through their protocol, which splits the token and allows trade on it through the Orderbook. This means clients can either increase their exposure to variable rates or fix their returns by selling the nTokens in return for zcTokens, which have the underlying assets value at maturity. 
-
-could we frontrun swivel?
 
 **Element Fi**:
 
