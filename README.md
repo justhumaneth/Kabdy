@@ -1,2 +1,3 @@
-- 👋 Hi, I’m @justhumaneth
-- 👀 I’m interested in blockchain development
+- 👋 gm, I’m @justhumaneth
+- 👀 I’m interested in web3 development
+
